@@ -11,9 +11,9 @@ int main() {
     char codigo[4];
     char nome[50];  
     int populacao;
-    int pontos_turisticos; 
     float area; 
     double pib; 
+    int pontos_turisticos; 
 
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
