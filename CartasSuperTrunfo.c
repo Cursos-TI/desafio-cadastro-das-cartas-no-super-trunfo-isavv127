@@ -38,7 +38,7 @@ int main() {
     printf("Digite o número de pontos turísticos: ");
     scanf("%d", &pontos_turisticos);  
 
-    // Exibição dos Dados das Cartas:
+    // Exibição dos Dados das Cartas
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
