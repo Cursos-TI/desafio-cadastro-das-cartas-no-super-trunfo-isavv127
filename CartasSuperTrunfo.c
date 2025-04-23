@@ -15,7 +15,7 @@ int main() {
     double pib; 
     int pontos_turisticos; 
 
-    // Cadastro das Cartas:
+    // cadastrando das Cartas:
     printf("Cadastro das Cartas\n");
     
     printf("Digite o código da cidade: ");
