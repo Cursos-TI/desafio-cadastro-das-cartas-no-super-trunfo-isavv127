@@ -46,7 +46,6 @@ int main() {
 
     // exibindo carta 1
     printf("\nCarta 1:\n");
-    printf("Estado: A\n");
     printf("Código: %s\n", codigo);
     printf("Nome da Cidade: %s\n", nome);
     printf("População: %lu\n", populacao1);
@@ -73,7 +72,7 @@ int main() {
     printf("Digite a área: ");
     scanf("%f", &area);
 
-    printf("Digite o PIB (em bilhões): ");
+    printf("Digite o PIB: ");
     scanf("%lf", &pib);
 
     printf("Digite o número de pontos turísticos: ");
@@ -92,7 +91,6 @@ int main() {
 
     // exibindo carta 2
     printf("\nCarta 2:\n");
-    printf("Estado: B\n");
     printf("Código: %s\n", codigo);
     printf("Nome da Cidade: %s\n", nome);
     printf("População: %lu\n", populacao2);
