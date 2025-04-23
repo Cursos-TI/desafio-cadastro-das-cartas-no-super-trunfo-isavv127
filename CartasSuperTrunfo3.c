@@ -17,8 +17,9 @@ int main() {
     printf("Digite o código da cidade: ");
     scanf("%s", codigo);
 
+    getchar();
     printf("Digite o nome da cidade: ");
-    scanf(" %[^\n]%*c", nome);
+    fgets(nome, 50, stdin);  
 
     printf("Digite a população: ");
     scanf("%lu", &populacao);
@@ -32,7 +33,7 @@ int main() {
     printf("Digite o número de pontos turísticos: ");
     scanf("%d", &pontos_turisticos);
 
-    // Salvando dados da carta 1
+    // salvando dados carta 1
     populacao1 = populacao;
     area1 = area;
     pib1 = pib;
@@ -43,7 +44,7 @@ int main() {
     sp1 = (float)populacao1 + area1 + (float)(pib1 * 1000000000.0) +
           (float)pt1 + (float)pib_pc1 + (1.0f / densidade1);
 
-    // Exibindo carta 1
+    // exibindo carta 1
     printf("\nCarta 1:\n");
     printf("Estado: A\n");
     printf("Código: %s\n", codigo);
@@ -62,8 +63,9 @@ int main() {
     printf("Digite o código da cidade: ");
     scanf("%s", codigo);
 
+    getchar();
     printf("Digite o nome da cidade: ");
-    scanf(" %[^\n]%*c", nome);
+    fgets(nome, 50, stdin);  
 
     printf("Digite a população: ");
     scanf("%lu", &populacao);
@@ -77,7 +79,7 @@ int main() {
     printf("Digite o número de pontos turísticos: ");
     scanf("%d", &pontos_turisticos);
 
-    // Salvando dados da carta 2
+    // salvando oss dados carta 2
     populacao2 = populacao;
     area2 = area;
     pib2 = pib;
@@ -88,7 +90,7 @@ int main() {
     sp2 = (float)populacao2 + area2 + (float)(pib2 * 1000000000.0) +
           (float)pt2 + (float)pib_pc2 + (1.0f / densidade2);
 
-    // Exibindo carta 2
+    // exibindo carta 2
     printf("\nCarta 2:\n");
     printf("Estado: B\n");
     printf("Código: %s\n", codigo);
@@ -101,7 +103,7 @@ int main() {
     printf("PIB per Capita: %.2lf reais\n", pib_pc2);
     printf("Super Poder: %.2f\n", sp2);
 
-    // Comparação
+    //comparar
     printf("\nComparação de Cartas:\n");
     printf("População: Carta 1 venceu (%d)\n", populacao1 > populacao2);
     printf("Área: Carta 1 venceu (%d)\n", area1 > area2);
