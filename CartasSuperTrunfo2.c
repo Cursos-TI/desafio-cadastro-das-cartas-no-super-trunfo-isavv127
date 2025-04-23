@@ -19,9 +19,10 @@ int main() {
     
     printf("\nDigite o código da cidade: ");
     scanf("%s", codigo);
-    
-    printf("Digite o nome da cidade: ");
-    scanf(" %[^\n]%*c", nome);  // perm espaços no nome
+
+    getchar();                                  /*parte onde tive dificuldade pois o codigo nao estava querendo ler o nome com espaço*/ 
+    printf("Digite o nome da cidade: ");        /* comecei a usar fgets mas ele pulava a entrada, ia direto pra população*/
+    fgets(nome, 50, stdin);                     /* e o getchar foi o que consegui encontrar e que deu certo pra fazer o fgets funcionar*/
     
     printf("Digite a população: ");
     scanf("%d", &populacao);
@@ -58,7 +59,7 @@ int main() {
     scanf("%s", codigo);
     
     printf("Digite o nome da cidade: ");
-    scanf(" %[^\n]%*c", nome);  
+    fgets(nome, 50, stdin);  
     
     printf("Digite a população: ");
     scanf("%d", &populacao);
